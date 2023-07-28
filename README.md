@@ -3,5 +3,5 @@ Challenge proposed by OneBitCode, where you have to build a website for a gym in
 
 Pair:  
 
-- Felipe Nascimento de Moura  
-- Lucas Fernando Tomazela
+- Felipe Nascimento de Moura.
+- Lucas Fernando Tomazela.
