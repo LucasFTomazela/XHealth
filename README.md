@@ -2,7 +2,7 @@
 
 <div align="center">
 <img src="https://i.ibb.co/YytqkwY/logo.png" alt="logo" width="400"/>
-<div/>
+</div>
 
 <h2>Project Description</h2>
 <p>
