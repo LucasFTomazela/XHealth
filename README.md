@@ -30,8 +30,8 @@
 
 <h2>Developers 👨‍💻👨‍💻</h2>
 <ul>
-<li><a href="#">Felipe Nascimento de Moura</a></li>
-<li><a href="https://www.linkedin.com/in/lucasftomazela/">Lucas Fernando Tomazela</a></li>
+<li><a href="#" target="_blank">Felipe Nascimento de Moura</a></li>
+<li><a href="https://www.linkedin.com/in/lucasftomazela/" target="_blank">Lucas Fernando Tomazela</a></li>
 </ul>
 
 <h2>Main Features 🚀</h2>
