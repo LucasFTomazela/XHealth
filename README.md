@@ -1,5 +1,9 @@
 <h1>XHealth - Gym Website</h1>
 
+<div align="center">
+<img src="https://i.ibb.co/YytqkwY/logo.png" alt="logo" width="400"/>
+<div/>
+
 <h2>Project Description</h2>
 <p>
   The XHealth project is a website developed for the XHealth Gym, a space dedicated to health, well-being, and physical activities. The gym offers a variety of modalities, including weightlifting, martial arts, dance, HIIT, indoor cycling, functional training, jump, and more.
