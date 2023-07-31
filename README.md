@@ -50,8 +50,8 @@
   </li><br>
   <li>
     <strong>Easy Communication:</strong>  Prospective clients can easily get in touch with us through the website by sending messages to inquire about our services or seek more information.
-  </li>
-  <li><br>
+  </li><br>
+  <li>
     <strong>Student Area:</strong>  We have a dedicated section for enrolled students where they can access their profile information and details about their personalized training plans.
   </li>
 </ul>
