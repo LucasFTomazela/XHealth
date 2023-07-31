@@ -37,22 +37,22 @@
 <h2>Main Features 🚀</h2>
 <ul>
   <li>
-    Diverse Modalities: XHealth Gym offers a wide variety of modalities, catering to different preferences and fitness goals. From high-impact activities to gentle exercises, our gym provides options to suit everyone's needs.
+    <strong>Diverse Modalities:</strong>  XHealth Gym offers a wide variety of modalities, catering to different preferences and fitness goals. From high-impact activities to gentle exercises, our gym provides options to suit everyone's needs.
   </li>
   <li>
-    Student Testimonials: The website showcases real testimonials from our students who achieved significant results during their time at the gym. These testimonials inspire and instill confidence in potential clients, motivating them to become part of our fitness community.
+    <strong>Student Testimonials:</strong>  The website showcases real testimonials from our students who achieved significant results during their time at the gym. These testimonials inspire and instill confidence in potential clients, motivating them to become part of our fitness community.
   </li>
   <li>
-    Experienced Professionals: Our instructors are highly experienced professionals and athletes who are well-respected in the fitness industry. They possess the expertise and knowledge needed to guide and support students on their fitness journeys, ensuring they reach their goals safely and effectively.
+    <strong>Experienced Professionals:</strong>  Our instructors are highly experienced professionals and athletes who are well-respected in the fitness industry. They possess the expertise and knowledge needed to guide and support students on their fitness journeys, ensuring they reach their goals safely and effectively.
   </li>
   <li>
-    Additional Services: In addition to the various modalities, we offer extra services such as body composition analysis with bioimpedance and personalized training plans, physiotherapy for injury treatment and prevention, and one-on-one sessions with personal trainers. These services can be availed individually to complement the students' gym experience.
+    <strong>Additional Services:</strong>  In addition to the various modalities, we offer extra services such as body composition analysis with bioimpedance and personalized training plans, physiotherapy for injury treatment and prevention, and one-on-one sessions with personal trainers. These services can be availed individually to complement the students' gym experience.
   </li>
   <li>
-    Easy Communication: Prospective clients can easily get in touch with us through the website by sending messages to inquire about our services or seek more information.
+    <strong>Easy Communication:</strong>  Prospective clients can easily get in touch with us through the website by sending messages to inquire about our services or seek more information.
   </li>
   <li>
-    Student Area: We have a dedicated section for enrolled students where they can access their profile information and details about their personalized training plans.
+    <strong>Student Area:</strong>  We have a dedicated section for enrolled students where they can access their profile information and details about their personalized training plans.
   </li>
 </ul>
 
