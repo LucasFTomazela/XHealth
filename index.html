@@ -124,22 +124,34 @@
     <section class="carrosselEstrutura">
 
         <div class="carrossel">
-            <img src="img/estrutura/download.png" alt="estrutura">
+            <img src="img/estrutura/download.png" alt="estrutura" class="primeiro">
             <img src="img/estrutura/Kalorias Montijo _ the first concept gym _ estudio AMATAM.png" alt="estrutura">
             <img src="img/estrutura/LUTA.jpeg" alt="estrutura">
             <img src="img/estrutura/TRX Gym.jpeg" alt="estrutura">
             <img src="img/estrutura/yellow gym equipment.png" alt="estrutura">
         </div>
 
-        <div class="prev"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>
+
+        <input type="radio" name="btn-radio" id="radio1">
+        <input type="radio" name="btn-radio" id="radio2">
+        <input type="radio" name="btn-radio" id="radio3">
+        <input type="radio" name="btn-radio" id="radio4">
+        <input type="radio" name="btn-radio" id="radio5">
+
+        <div class="nav-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+            <div class="auto-btn5"></div>
         </div>
-        <div class="next"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                stroke="currentColor" class="w-6 h-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
-            </svg>
+
+        <div class="nav-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+            <label for="radio4" class="manual-btn"></label>
+            <label for="radio5" class="manual-btn"></label>
         </div>
 
     </section><!-- carrosselEstrutura -->
@@ -330,6 +342,8 @@
 
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
