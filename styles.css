@@ -815,17 +815,22 @@ footer .centro .right .newsletter .email .newsletterInput label{
 
 @keyframes widthTransform {
   0%   { width: auto }
-  25%  { width: 80px }
-  50%  { width: 90px }
+  20%  { width: 80px }
+  40%  { width: 85px }
+  60%  { width: 90px }
+  80%  { width: 95px }
   100% { width: 100px }
 }
 
 @keyframes widthTransformReturn {
   0%   { width: 100px }
-  50%  { width: 90px }
-  75%  { width: 80px }
+  20%  { width: 95px }
+  40%  { width: 90px }
+  60%  { width: 85px }
+  80%  { width: 80px }
   100% { width: auto }
 }
+
 
 footer .centro .right .newsletter .email .newsletterInput button {
   position: absolute;
@@ -850,14 +855,14 @@ footer .centro .right .newsletter .email .newsletterInput button {
 footer .centro .right .newsletter .email .newsletterInput button:hover,
 footer .centro .right .newsletter .email .newsletterInput button:focus {
   animation-name: widthTransform;
-  animation-duration: .3s;
+  animation-duration: .2s;
   animation-fill-mode: forwards; 
   animation-direction: alternate;
 }
 
 footer .centro .right .newsletter .email .newsletterInput button:not(:hover) {
   animation-name: widthTransformReturn;
-  animation-duration: .3s;
+  animation-duration: .2s;
   animation-fill-mode: forwards;
   animation-direction: alternate;
 }
