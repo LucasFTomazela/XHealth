@@ -569,7 +569,7 @@ padding-top: 30px;
  }
  
  .form .formulario .imgContent{
-  height: 812px;
+  height: 750px;
   width: 60%;
   object-fit: cover;
  }
@@ -577,8 +577,8 @@ padding-top: 30px;
  .form .formulario .imgContent img{
     height: 100%;
     width: 100%;
-    transform: translate(2px, 0px);
     border-radius: 70px 0 0 0;
+    object-fit: cover;
  }
 
  .form .formulario .formContent{
@@ -618,7 +618,7 @@ padding-top: 30px;
   border-radius: 40px;
   background: #EBBA34;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  margin: 63px ;
+  margin: 63px 52px 0 52px;
   border: none;
   cursor: pointer;
  }
@@ -626,13 +626,15 @@ padding-top: 30px;
  .form .formulario .formContent .nameGroup, .emailGroup, .telGroup{
   display: flex;
   flex-direction: column;
+  position: relative;
  }
 
  .form .formulario .formContent .nameGroup > label, .emailGroup > label, .telGroup > label{
+  cursor: text;
   position: absolute;
   z-index: 100;
-  left: 40px;
-  padding-top: 9px;
+  left: 20px;
+  top: 20%;
   color: #FFF;
   text-align: center;
   font-family: Nunito Sans;
@@ -643,6 +645,7 @@ padding-top: 30px;
  }
 
 .nameGroup input, .emailGroup input, .telGroup input{
+  color: #fff;
   position: relative;
   background: #1A1A1A;
   border: none;
@@ -652,5 +655,10 @@ padding-top: 30px;
   border-radius: 8px;
   outline: none;
  }
+
+ .telGroup input:focus ~ label {
+  transform: translateY(-10px);
+}
+
 
 
