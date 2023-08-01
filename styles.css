@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+body{
+  overflow-x: hidden;
+}
+
 :root {
   font-family: "Nunito Sans", sans-serif;
   --primaryColor: #ebba34;
@@ -121,6 +125,7 @@ header .centro nav a {
 
 .modalidades{
   background: #050505;
+  margin-top: -7px;
 }
 
 .modalidades .centro{
@@ -324,7 +329,7 @@ padding-top: 30px;
 }
 
 .carrosselEstrutura .nav-manual, .carrosselEstrutura .nav-auto{
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   position: absolute;
@@ -334,7 +339,7 @@ padding-top: 30px;
 }
 
 .carrosselEstrutura .nav-manual .manual-btn, .carrosselEstrutura .nav-auto div{
-  border: 1px solid var(--secondaryColor);
+  border: 2px solid var(--secondaryColor);
   border-radius: 100%;
   width: 10px;
   height: 10px;
@@ -369,6 +374,284 @@ padding-top: 30px;
 .carrosselEstrutura #radio5:checked + .carrosselEstrutura .carrossel{
   margin-right: 400% !important;
 }
+
+.wrap{
+    position: absolute;
+    top: 79%;
+    z-index: 9999999;
+    width: 100%;
+
+}
+
+.referencia{
+  padding-top: 100px;
+  background-color: #050505;
+  padding-bottom: 120px;
+}
+
+
+.referencia .centro .top .left{
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.referencia .centro .top .right{
+  display: flex;
+  justify-content: end;
+  margin-top: -125px;
+}
+
+.referencia .centro .top .left .title{
+  color: #FFF;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+
+.referencia .centro .top .left .subtitle{
+  color: #EBBA34;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 133.333% */
+  padding-top: 30px;
+}
+
+.referencia .centro .top .right .rating{
+  color: #FFF;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 48px; /* 133.333% */
+}
+
+.referencia .centro .top .subrating{
+  color: #FFF;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 266.667% */
+  float: right;
+  margin-top: -10px;
+}
+
+.cardsReferences{
+  padding-top: 180px;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  column-gap: 30px;
+}
+
+.cardsReferences .references{
+  position: relative;
+  padding: 30px 33px;
+  background: #EBBA34;
+}
+
+.cardsReferences .ref1, .ref3{
+  border-radius: 0px 70px;
+}
+
+.cardsReferences .ref2{
+  border-radius: 70px 0px;
+}
+
+
+.cardsReferences .references .desc{
+  color: #000;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px; /* 100% */
+  margin-top: 55px;
+}
+
+.cardsReferences .references .name{
+  margin-top: 50px;
+  color: #050505;
+  text-align: start;
+  font-family: Nunito Sans;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px; /* 100% */
+}
+
+.cardsReferences .references .subName{
+  margin-top: 10px;
+  color: rgba(5, 5, 5, 0.75);
+  text-align: start;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 20px; /* 111.111% */
+}
+
+.xtraServices{
+  background-color: #EBBA34;
+  padding: 100px 0;
+}
+
+.xtraServices .centro .title{
+  color: #050505;
+  text-align: start;
+  font-family: Nunito Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
+}
+
+.xtraServices .centro .subtitle{
+  margin-top: 10px;
+  color: #FFF;
+  text-align: start;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 200% */
+}
+
+.xtraServices .centro .cardsServices{
+  margin-top: 150px;
+  display: flex;
+  column-gap: 94px;
+}
+
+.xtraServices .centro .cardsServices .card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #050505;
+  padding: 74px 58px;
+  border-radius: 10px;
+  border-top: 8px solid #1A1A1A;
+  border-left: 8px solid #1A1A1A;
+}
+
+ .xtraServices .centro .cardsServices .card .serviceDesc{
+  color: #EBBA34;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 100% */
+  margin-top: 50px;
+ }
+
+ .form{
+  background-color: var(--secondaryColor);
+  padding: 280px 0 120px 0;
+  margin-top: -200px;
+ }
+
+ .form .formulario{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ }
+ 
+ .form .formulario .imgContent{
+  height: 812px;
+  width: 60%;
+  object-fit: cover;
+ }
+
+ .form .formulario .imgContent img{
+    height: 100%;
+    width: 100%;
+    transform: translate(2px, 0px);
+    border-radius: 70px 0 0 0;
+ }
+
+ .form .formulario .formContent{
+  border-radius: 0px 0px 70px 0px;
+  background: #262626;
+  padding: 104px 20px;
+  position: relative;
+ }
+
+ .form .formulario .formContent .groups{
+  display: flex;
+  flex-direction: column;
+  row-gap: 63px;
+ }
+
+ .form .formulario .formContent .frmTitle{
+  padding-bottom: 74px;
+  color: #FFF;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 100% */
+  
+ }
+
+ .form .formulario .formContent .formBtn{
+  padding: 15px 20px;
+  color: #050505;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px; /* 218.182% */
+  border-radius: 40px;
+  background: #EBBA34;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  margin: 63px ;
+  border: none;
+  cursor: pointer;
+ }
+
+ .form .formulario .formContent .nameGroup, .emailGroup, .telGroup{
+  display: flex;
+  flex-direction: column;
+ }
+
+ .form .formulario .formContent .nameGroup > label, .emailGroup > label, .telGroup > label{
+  position: absolute;
+  z-index: 100;
+  left: 40px;
+  padding-top: 9px;
+  color: #FFF;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px; /* 200% */
+ }
+
+.nameGroup input, .emailGroup input, .telGroup input{
+  position: relative;
+  background: #1A1A1A;
+  border: none;
+  width: 100%;
+  height: 55px;
+  padding: 0 20px;
+  border-radius: 8px;
+  outline: none;
+ }
 
 
 
