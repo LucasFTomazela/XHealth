@@ -44,6 +44,7 @@ header .centro .logo h1{
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  cursor: pointer;
 }
 
 header .centro nav {
@@ -119,7 +120,7 @@ header .centro nav a {
   transition: transform 0.4s ease-in-out;
 }
 
-.start .text .planos:hover {
+.start .text .planos:hover, .start .text .planos:focus {
   transform: scale(1.02)  ;
 }
 
@@ -228,7 +229,7 @@ padding-top: 30px;
   cursor: pointer;
 }
 
-.modalidades .centro .btnModalidades:hover{
+.modalidades .centro .btnModalidades:hover,.modalidades .centro .btnModalidades:focus{
   transform: scale(1.02);
 }
 
@@ -621,6 +622,11 @@ padding-top: 30px;
   margin: 63px 52px 0 52px;
   border: none;
   cursor: pointer;
+  transition: transform .4s ease-in-out;
+ }
+
+ .formBtn:hover, .formBtn:focus{
+  transform: scale(1.02);
  }
 
  .form .formulario .formContent .nameGroup, .emailGroup, .telGroup{
@@ -642,6 +648,7 @@ padding-top: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 36px; /* 200% */
+  transition: all 0.3s ease-in-out;
  }
 
 .nameGroup input, .emailGroup input, .telGroup input{
@@ -656,9 +663,204 @@ padding-top: 30px;
   outline: none;
  }
 
- .telGroup input:focus ~ label {
-  transform: translateY(-10px);
+ footer{
+  padding: 100px 0;
+  background: #1A1A1A;
 }
 
+footer .centro{
+  display: flex;
+  justify-content: space-between;
+}
 
+footer .centro .left{
+  display: grid;
+  row-gap: 32px;
+}
 
+footer .centro .left .logo h1{
+  color: #EBBA34;
+  text-align: start;
+  text-shadow: 1px 1px 14px #EBBA34;
+  font-family: Nunito Sans;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding-bottom: 82px;
+  cursor: pointer;
+}
+
+footer .centro .left .telefone{
+  display: flex;
+}
+
+footer .centro .left .email{
+  display: flex;
+}
+
+footer .centro .left .loc {
+  display: flex;
+}
+
+footer .footerDesc{
+  color: #FFF;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+footer .footerTitle{
+  color: #EBBA34;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+footer svg{
+  margin-right: 20px !important;
+}
+
+footer .centro .center{
+  display: grid;
+  row-gap: 40px;
+  margin-top: 10px;
+}
+
+footer .centro .top{
+  display: flex;
+  width: fit-content;
+}
+
+footer .centro .top svg, footer .centro .top p{
+  color: #EBBA34;
+}
+
+footer .centro .center .funcionamento .footerDesc, footer .centro .center .acompanhamento .footerDesc{
+  margin-left: 35px;
+  padding-top: 10px;
+}
+
+footer .centro .right{
+  display: grid;
+  row-gap: 85px;
+  margin-top: 10px;
+}
+
+footer .centro .right .socials{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 15px;
+}
+
+footer .centro .right .socials .top{
+  display: flex;
+}
+
+footer .centro .right .socials .redes{
+  display: flex;
+  column-gap: 20px;
+}
+
+footer .centro .right .socials .redes svg{
+  margin: 0 !important;
+}
+
+footer .centro .right .newsletter{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+footer .centro .right .newsletter .email .newsletterInput{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+footer .centro .right .newsletter .email .newsletterInput input{
+  color: #fff;
+  position: relative;
+  border-radius: 10px;
+  background: #050505;
+  border: none;
+  outline: none;
+  padding: 23px 25px;
+  width: 100%;
+  transition: all .3s ease-in-out;
+}
+
+footer .centro .right .newsletter .email .newsletterInput label{
+  position: absolute;
+  color: #FFF;
+  text-align: start;
+  top: 34%;
+  left: 25px;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  z-index: 100;
+  transition: all .3s ease-in-out;
+}
+
+@keyframes widthTransform {
+  0%   { width: auto }
+  25%  { width: 80px }
+  50%  { width: 90px }
+  100% { width: 100px }
+}
+
+@keyframes widthTransformReturn {
+  0%   { width: 100px }
+  50%  { width: 90px }
+  75%  { width: 80px }
+  100% { width: auto }
+}
+
+footer .centro .right .newsletter .email .newsletterInput button {
+  position: absolute;
+  right: 0;
+  border-radius: 0px 10px 10px 0px;
+  background: #EBBA34;
+  color: #000;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  padding: 21px 18px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  width: 100%; 
+  max-width: 200px; 
+}
+
+footer .centro .right .newsletter .email .newsletterInput button:hover,
+footer .centro .right .newsletter .email .newsletterInput button:focus {
+  animation-name: widthTransform;
+  animation-duration: .3s;
+  animation-fill-mode: forwards; 
+  animation-direction: alternate;
+}
+
+footer .centro .right .newsletter .email .newsletterInput button:not(:hover) {
+  animation-name: widthTransformReturn;
+  animation-duration: .3s;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+.newsletter input:focus{
+  outline: 1px solid #EBBA34 !important;
+}

@@ -36,3 +36,71 @@ function passImg() {
         carrossel.style.marginLeft = `-400%`;
     }
 }
+
+const inputs = document.querySelectorAll('.form .formulario .formContent .groups input');
+
+function moveLabelUp(event) {
+    const label = event.target.parentElement.querySelector('label');
+    label.style.transform = "translateY(-45px)";
+    label.style.color = `#EBBA34`
+}
+
+function moveLabelDown(event) {
+    const label = event.target.parentElement.querySelector('label');
+    if (event.target.value.trim() === '') {
+        label.style.transform = "translateY(0)";
+        label.style.color = `#FFF`
+    }
+}
+
+inputs.forEach((input) => {
+    input.addEventListener('focus', moveLabelUp);
+    input.addEventListener('blur', moveLabelDown);
+});
+
+const btn = document.querySelector('.formBtn');
+
+function clear() {
+    inputs.forEach((input) => {
+        input.value = '';
+        const label = input.parentElement.querySelector('label');
+        label.style.transform = "translateY(0)";
+        label.style.color = `#FFF`
+    });
+}
+
+btn.addEventListener('click', clear);
+
+
+
+const newsletterInput = document.querySelector('.newsletterInput input');
+const newsletterLabel = document.querySelector('.newsletterInput label');
+const newsletterBtn = document.querySelector('.newsletterInput button');
+
+function newsLabelUp() {
+    newsletterLabel.style.transform = "translateY(45px)";
+    newsletterLabel.style.color = "#EBBA34";
+}
+
+function newsLabelDown() {
+    if (newsletterInput.value.trim() === '') {
+        newsletterLabel.style.transform = "translateY(0)";
+        newsletterLabel.style.color = "#FFF";
+    }
+}
+
+newsletterInput.addEventListener('focus', newsLabelUp);
+newsletterInput.addEventListener('blur', newsLabelDown);
+
+function newsClear() {
+    newsletterInput.value = '';
+    newsletterLabel.style.transform = "translateY(0)";
+    newsletterLabel.style.color = "#FFF";
+}
+
+newsletterBtn.addEventListener('click', newsClear);
+
+
+
+
+
