@@ -402,6 +402,7 @@ padding-top: 30px;
   display: flex;
   justify-content: end;
   margin-top: -125px;
+  column-gap: 15px;
 }
 
 .referencia .centro .top .left .title{
