@@ -87,9 +87,9 @@ header .centro nav .userDiv .username {
   color: #fff;
   text-align: center;
   font-family: Nunito Sans;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 800;
   font-style: normal;
-  font-weight: 900;
   line-height: normal;
 }
 
@@ -206,7 +206,6 @@ header .centro nav .userDiv .username {
   flex-direction: column;
   align-items: center;
   width: 25%;
-  cursor: pointer;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -770,8 +769,39 @@ header .centro nav .userDiv .username {
 footer {
   padding: 100px 0;
   background: #1a1a1a;
+  position: relative;
 }
 
+footer .copied {
+  position: fixed;
+  bottom: 30px;
+  display: flex;
+  z-index: 9999999;
+  width: 100px;
+  height: 50px;
+  background: #ebba34;
+  align-items: center;
+  justify-content: center;
+  right: 50%;
+  transition: all 0.2s ease-in-out;
+  border-radius: 20px 0 20px 0;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+
+footer .visible {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+footer .copied .copyText {
+  color: #050505;
+  font-family: Nunito Sans;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
 footer .centro {
   display: flex;
   justify-content: space-between;
@@ -810,14 +840,17 @@ footer .centro .left .logo h1:hover {
 
 footer .centro .left .telefone {
   display: flex;
+  cursor: pointer;
 }
 
 footer .centro .left .email {
   display: flex;
+  cursor: pointer;
 }
 
 footer .centro .left .loc {
   display: flex;
+  cursor: pointer;
 }
 
 footer .footerDesc {
@@ -827,6 +860,18 @@ footer .footerDesc {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+
+#phone:hover {
+  color: #ebba34;
+}
+
+#mail:hover {
+  color: #ebba34;
+}
+
+#address:hover {
+  color: #ebba34;
 }
 
 footer .footerTitle {
@@ -890,6 +935,13 @@ footer .centro .right .socials .redes {
 
 footer .centro .right .socials .redes svg {
   margin: 0 !important;
+  transition: width 0.3s ease-in-out;
+  transition: height 0.3s ease-in-out;
+}
+
+footer .centro .right .socials .redes a:hover > svg path {
+  fill: #ebba34;
+  transform: scale(1.02);
 }
 
 footer .centro .right .newsletter {
