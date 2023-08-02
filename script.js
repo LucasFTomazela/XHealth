@@ -101,6 +101,32 @@ function newsClear() {
 newsletterBtn.addEventListener('click', newsClear);
 
 
+function scrollToTarget(event) {
+    event.preventDefault(); // Evita o comportamento padrão do link (navegação direta)
+
+    const targetId = event.currentTarget.getAttribute("href"); // Obtém o ID do elemento alvo
+    const targetElement = document.querySelector(targetId); // Obtém a referência para o elemento alvo
+
+    if (targetElement) {
+      // Se o elemento alvo existir, faça a rolagem suave até ele
+      const offsetTop = targetElement.getBoundingClientRect().top;
+      const offset = window.scrollY;
+      const targetPosition = offsetTop + offset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth", // Define a rolagem suave
+      });
+    }
+  }
+
+  // Adiciona o evento de clique aos links com a classe "smooth-scroll"
+  const smoothScrollLinks = document.querySelectorAll("a[href^='#']");
+  smoothScrollLinks.forEach(link => {
+    link.addEventListener("click", scrollToTarget);
+  });
+
+
 
 
 
