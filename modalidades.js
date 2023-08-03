@@ -51,7 +51,7 @@ function btnShowHide(count) {
     btnPrev.style.cursor = 'default';
     btnNext.style.cursor = 'pointer';
     btnNext.addEventListener('click', nextBtn)
-  } else if (count === carouselImage.length - 2) {
+  } else if (count === carouselImage.length - 4) {
     btnPrev.classList.remove('is-hidden');
     btnNext.classList.add('is-hidden');
     btnNext.removeEventListener('click', nextBtn)

@@ -9,7 +9,7 @@
 
 body {
   overflow-x: hidden;
-  background-color: var(--primaryColor);
+  background-color: #1a1a1a;
 }
 
 :root {
@@ -22,6 +22,7 @@ body {
 .centro {
   max-width: 1398px;
   margin: 0 auto;
+  position: relative;
 }
 
 header {
@@ -90,168 +91,70 @@ header .centro nav .userDiv {
   align-items: center;
 }
 
-.main .centro {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+.modalidades .centro {
+  padding-top: 150px;
+  padding-bottom: 65px;
 }
 
-.main .centro .title {
-  margin-top: 160px;
-  color: #050505;
+.modalidades .centro .title {
+  color: #fff;
   text-align: center;
   font-family: Nunito Sans;
   font-size: 48px;
   font-style: normal;
-  font-weight: 800;
-  line-height: 48px;
-  cursor: default;
+  font-weight: 700;
+  line-height: 48px; /* 100% */
 }
 
-.main .centro .cards {
-  display: flex;
-  column-gap: 94px;
-  margin-top: 100px;
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
-
-.main .centro .cards .card {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
-  margin: 0 auto;
-  width: 100%;
-  background: #d9d9d9;
-  border-radius: 10px;
-  min-width: 403px;
-  max-width: 403px;
-  height: 420px;
-}
-
-.main .centro .cards .card1 {
-  background-image: url(https://hips.hearstapps.com/hmg-prod/images/articles/2016/06/riptensity-belly-fat-knockout-1522243377.jpg?crop=0.636xw:1xh;center,top&resize=360:*);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card1:hover {
-  background-image: url(https://hips.hearstapps.com/hmg-prod/images/articles/2016/06/ripped-1-min-abs-1467726482.jpg?crop=0.636xw:1xh;center,top&resize=360:*);
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card2 {
-  background-image: url(https://swoontalent.com/wp-content/uploads/2022/09/BETINA-IN-ACTION-1024x682.jpeg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card2:hover {
-  background-image: url(https://asweatlife.com/wp-content/uploads/2018/05/aSweatLife_BetinaGozo_SweatWorking_featured.jpg);
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card3 {
-  background-image: url(https://scontent.frao3-1.fna.fbcdn.net/v/t39.30808-6/259261331_4517977184924462_639567612984446920_n.jpg?stp=cp0_dst-jpg_e15_fr_q65&_nc_cat=103&ccb=1-7&_nc_sid=9e2e56&efg=eyJpIjoidCJ9&_nc_eui2=AeHJQji4-6poBh-6gUCVBgyE9yk9Buli0pL3KT0G6WLSkvOFlo88thFNkY5VCT8knAzbPpn2V-VH0uTMyCByYwT4&_nc_ohc=FkZE2_HccooAX-1Bh-Y&_nc_ht=scontent.frao3-1.fna&oh=00_AfBlctKBbZBR3dWOokOo9pjZ9KBUoY9DiVto1iMUM5R9mg&oe=64CE3614);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card3:hover {
-  background-image: url(https://static.hudl.com/users/prod/7229434_0dfb81b432db460388318d29b97ed857.jpg);
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card4 {
-  background-image: url(https://i.insider.com/63b73b1b8a50b20018ef331c?width=700);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card4:hover {
-  background-image: url(https://www.wellandgood.com/wp-content/uploads/2016/06/jillian-michaels-health-rules-7.jpg);
-  background-position: center;
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card5 {
-  background-image: url(https://ta-prod-assets.s3.us-east-1.amazonaws.com/media/2019/10/30114932/TA_LaTimes-1-e1623734124425.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card5:hover {
-  background: url(https://i.dailymail.co.uk/1s/2023/02/17/16/67799397-11760491-Over_the_past_two_decades_Tracy_Anderson_s_name_has_become_synon-a-57_1676652555656.jpg);
-  background-size: cover;
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card6 {
-  background-image: url(https://9bqea6.p3cdn2.secureserver.net/wp-content/uploads/2018/01/about-e1515538886349.jpg?time=1681847931);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card6:hover {
-  background-image: url(https://media.thechalkboardmag.com/wp-content/uploads/2019/02/29215220/gunnar-1.jpg);
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card .text {
-  margin-left: 30px;
-  margin-bottom: 30px;
-}
-
-.main .centro .cards .card .text .name {
-  color: rgb(235, 186, 52) !important;
+.modalidades .centro .subtitle {
+  color: #ebba34;
+  text-align: center;
   font-family: Nunito Sans;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 800;
-}
-
-.main .centro .cards .card .text .area {
-  color: rgba(255, 255, 255, 0.8);
-  font-family: Nunito Sans;
-  font-size: 18px;
+  font-size: 36px;
   font-style: normal;
   font-weight: 700;
+  line-height: 48px; /* 133.333% */
+  padding-top: 30px;
 }
 
-.main .centro .btn--next {
+.modalidades .centro .cards {
+  display: flex;
+  margin-top: 50px;
+  column-gap: 20px;
   position: absolute;
-  top: 235%;
+}
+
+.modalidades .centro .cards .card {
+  border-radius: 8px;
+  border-top: 1px solid #ebba34;
+  border-left: 1px solid rgb(235, 186, 52);
+  background: #050505;
+  padding: 40px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  min-width: 334px;
+  min-height: 306px;
+  overflow: hidden;
+}
+
+.modalidades .centro .cards .card:hover {
+  transform: scale(1.03);
+}
+
+.modalidades .centro .cards .card img {
+  padding: 35px 0;
+}
+
+.btn--next {
+  position: absolute;
+  top: 130%;
   right: -220px;
-  color: #fff;
-  background-color: rgba(5, 5, 5, 0.8);
+  color: #050505;
+  background-color: rgba(235, 186, 52, 0.9);
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -265,18 +168,18 @@ header .centro nav .userDiv {
   cursor: pointer;
 }
 
-.main .centro .btn--next p {
+.btn--next p {
   margin-top: -9px;
   margin-right: -6px;
   transition: all 0.3s ease-in-out;
 }
 
-.main .centro .btn--prev {
+.btn--prev {
   position: absolute;
-  top: 235%;
+  top: 130%;
   left: -80px;
-  color: #fff;
-  background-color: rgba(5, 5, 5, 0.8);
+  color: #050505;
+  background-color: rgb(235, 186, 52, 0.8);
   width: 50px;
   height: 50px;
   border-radius: 100%;
@@ -290,23 +193,23 @@ header .centro nav .userDiv {
   cursor: pointer;
 }
 
-.main .centro .btn--prev:hover {
+.btn--prev:hover {
   background-color: #050505;
 }
 
-.main .centro .btn--prev:hover p {
+.btn--prev:hover p {
   color: #ebba34;
 }
 
-.main .centro .btn--next:hover {
+.btn--next:hover {
   background-color: #050505;
 }
 
-.main .centro .btn--next:hover p {
+.btn--next:hover p {
   color: #ebba34;
 }
 
-.main .centro .btn--prev p {
+.btn--prev p {
   margin-top: -5px;
   margin-right: 5px;
   rotate: 180deg;
@@ -318,14 +221,67 @@ header .centro nav .userDiv {
   cursor: none;
 }
 
-.wrap {
-  width: 100%;
-  height: 700px;
+.modalidades .centro .cards .card .cardTitle {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 200% */
+}
+
+.modalidades .centro .cards .card .cardDesc {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 14px; /* 100% */
+}
+
+.modalidades .centro .desc {
+  color: #fff;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 200% */
+  text-transform: capitalize;
+  margin-top: 50px;
+}
+
+.modalidades .centro .btnModalidades {
+  color: #050505;
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 48px; /* 200% */
+  text-transform: capitalize;
+  border-radius: 40px;
+  background: #ebba34;
+  box-shadow: 4px 5px 9px 0px #645220;
+  border: none;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  padding: 18px 18px;
+  transition: transform 0.4s ease-in-out;
+  cursor: pointer;
+}
+
+.modalidades .centro .btnModalidades:hover,
+.modalidades .centro .btnModalidades:focus {
+  transform: scale(1.02);
 }
 
 footer {
   padding: 100px 0;
-  background: #1a1a1a;
+  background: #050505;
   position: relative;
 }
 
@@ -517,12 +473,16 @@ footer .centro .right .newsletter .email .newsletterInput input {
   color: #fff;
   position: relative;
   border-radius: 10px;
-  background: #050505;
+  background: #1a1a1a;
   border: none;
   outline: none;
   padding: 23px 25px;
   width: 100%;
   transition: all 0.3s ease-in-out;
+}
+.wrap {
+  width: 100%;
+  height: 540px;
 }
 
 footer .centro .right .newsletter .email .newsletterInput label {
@@ -620,4 +580,29 @@ footer .centro .right .newsletter .email .newsletterInput button:not(:hover) {
 
 .newsletter input:focus {
   outline: 1px solid #ebba34 !important;
+}
+
+.coming {
+  position: absolute;
+  width: 140%;
+  height: 30px;
+  top: 45%;
+  background: rgba(235, 186, 52, 0.8);
+  rotate: -42deg;
+}
+
+.coming .text {
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  font-family: Nunito Sans;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px; /* 200% */
+  text-transform: capitalize;
+  margin-top: 50px;
+  position: absolute;
+  z-index: 100;
+  top: -60px;
+  right: 36%;
 }

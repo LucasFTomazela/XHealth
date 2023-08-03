@@ -326,6 +326,28 @@ header .centro nav .userDiv .username {
   align-self: flex-end;
   margin-right: 105px;
   margin-top: 30px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.profissionais .text .subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 3px;
+  transform: scaleX(0);
+  background-color: #fff;
+  transition: transform 0.3s;
+}
+
+.profissionais .text .subtitle:hover::after {
+  transform: scaleX(1);
+}
+
+.profissionais .text .subtitle:hover {
+  transform: translateX(-8px);
 }
 
 .profissionais .centro .cardsProfissionais {
