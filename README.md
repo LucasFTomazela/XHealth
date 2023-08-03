@@ -12,6 +12,10 @@
   Our goal is to create an attractive and informative page for potential clients to get a better understanding of our facilities and high-quality services. The modern and elegant design reflects the excellence of our gym, featuring state-of-the-art equipment and highly qualified instructors who are well-recognized in the market.
 </p>
 
+<div align="center">
+<img src="img/readme/Site.gif" alt="logo" width="800"/>
+</div>
+
 <h2>Technologies Used 🛠️</h2>
 <ul>
   <li>
