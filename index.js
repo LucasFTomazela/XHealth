@@ -37,6 +37,10 @@ function passImg() {
     }
 }
 
+
+
+
+
 const inputs = document.querySelectorAll('.form .formulario .formContent .groups input');
 
 function moveLabelUp(event) {
@@ -77,12 +81,12 @@ const newsletterInput = document.querySelector('.newsletterInput input');
 const newsletterLabel = document.querySelector('.newsletterInput label');
 const newsletterBtn = document.querySelector('.newsletterInput button');
 
-function newsLabelUp() {
+export function newsLabelUp() {
     newsletterLabel.style.transform = "translateY(45px)";
     newsletterLabel.style.color = "#EBBA34";
 }
 
-function newsLabelDown() {
+export function newsLabelDown() {
     if (newsletterInput.value.trim() === '') {
         newsletterLabel.style.transform = "translateY(0)";
         newsletterLabel.style.color = "#FFF";
@@ -92,7 +96,7 @@ function newsLabelDown() {
 newsletterInput.addEventListener('focus', newsLabelUp);
 newsletterInput.addEventListener('blur', newsLabelDown);
 
-function newsClear() {
+export function newsClear() {
     newsletterInput.value = '';
     newsletterLabel.style.transform = "translateY(0)";
     newsletterLabel.style.color = "#FFF";
@@ -102,25 +106,23 @@ newsletterBtn.addEventListener('click', newsClear);
 
 
 function scrollToTarget(event) {
-    event.preventDefault(); // Evita o comportamento padrão do link (navegação direta)
+    event.preventDefault();
 
-    const targetId = event.currentTarget.getAttribute("href"); // Obtém o ID do elemento alvo
-    const targetElement = document.querySelector(targetId); // Obtém a referência para o elemento alvo
+    const targetId = event.currentTarget.getAttribute("href");
+    const targetElement = document.querySelector(targetId);
 
     if (targetElement) {
-      // Se o elemento alvo existir, faça a rolagem suave até ele
       const offsetTop = targetElement.getBoundingClientRect().top;
       const offset = window.scrollY;
       const targetPosition = offsetTop + offset;
 
       window.scrollTo({
         top: targetPosition,
-        behavior: "smooth", // Define a rolagem suave
+        behavior: "smooth",
       });
     }
   }
 
-  // Adiciona o evento de clique aos links com a classe "smooth-scroll"
   const smoothScrollLinks = document.querySelectorAll("a[href^='#']");
   smoothScrollLinks.forEach(link => {
     link.addEventListener("click", scrollToTarget);
@@ -137,16 +139,21 @@ function scrollToTarget(event) {
   phone.addEventListener('click', copyToClipboard)
   mail.addEventListener('click', copyToClipboard)
 
-  function copyToClipboard(ev) {
+  export function copyToClipboard(ev) {
     navigator.clipboard.writeText(ev.currentTarget.innerText);
   
-    // Adiciona a classe "visible" para fazer o elemento aparecer
     copyText.classList.add('visible');
   
-    // Aguarda 2 segundos (2000 milissegundos) e, em seguida, remove a classe "visible" para fazer o elemento sumir
     setTimeout(function () {
       copyText.classList.remove('visible');
     }, 1500);
+  }
+
+  module.exports = {
+    copyToClipboard,
+    newsClear,
+    newsLabelDown,
+    newsLabelUp
   }
 
 

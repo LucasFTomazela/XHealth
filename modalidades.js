@@ -67,7 +67,7 @@ function btnShowHide(count) {
   }
 }
 
-const address = document.getElementById(`address`)
+  const address = document.getElementById(`address`)
   const phone = document.getElementById(`phone`)
   const mail = document.getElementById(`mail`)
   const copyText = document.getElementById(`copied`)
