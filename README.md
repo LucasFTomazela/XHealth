@@ -13,8 +13,9 @@
 </p>
 
 <div align="center">
-<img src="https://s11.gifyu.com/images/Scg22.gif" alt="logo" width="800"/>
+<img src="img/readme/Site.gif" alt="logo" width="800"/>
 </div>
+
 <h2>Technologies Used 🛠️</h2>
 <ul>
   <li>
