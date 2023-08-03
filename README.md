@@ -66,6 +66,15 @@ The XHealth Gym's visual identity is characterized by the colors #ebba34 (yellow
 </P>
 
 <h2>Additional Requirement 🌟</h2>
+<ul>
+<li>
+JS III - DOM Exercise: Felipe used the JS III - DOM module during the "Practical Project: Calc.js". He implemented the "CopyToClipBoard" functionality in the footer of the website, allowing users to easily copy important information or relevant links to the clipboard.
+</li><br>
+<li>
+Git and GitHub Exercise: Lucas utilized the Git and GitHub module, where he created the first online repository for the XHealth project. This enables the team to collaborate on the source code, track changes, and ensure project stability using the Git version control system.
+</li>
+</ul>
+
 <P>
-As part of the challenge proposed by the course, we included a specific exercise that originated from one of the course modules. We integrated this exercise into the structure of the XHealth Gym website, enhancing the overall user experience.
+With these additional requirements and the main features mentioned above, the XHealth project is well-equipped to offer a comprehensive and attractive experience to potential gym clients, showcasing the excellence of our services and commitment to quality.
 </P>
