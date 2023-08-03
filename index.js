@@ -81,12 +81,12 @@ const newsletterInput = document.querySelector('.newsletterInput input');
 const newsletterLabel = document.querySelector('.newsletterInput label');
 const newsletterBtn = document.querySelector('.newsletterInput button');
 
-export function newsLabelUp() {
+function newsLabelUp() {
     newsletterLabel.style.transform = "translateY(45px)";
     newsletterLabel.style.color = "#EBBA34";
 }
 
-export function newsLabelDown() {
+function newsLabelDown() {
     if (newsletterInput.value.trim() === '') {
         newsletterLabel.style.transform = "translateY(0)";
         newsletterLabel.style.color = "#FFF";
@@ -96,7 +96,7 @@ export function newsLabelDown() {
 newsletterInput.addEventListener('focus', newsLabelUp);
 newsletterInput.addEventListener('blur', newsLabelDown);
 
-export function newsClear() {
+function newsClear() {
     newsletterInput.value = '';
     newsletterLabel.style.transform = "translateY(0)";
     newsletterLabel.style.color = "#FFF";
@@ -139,7 +139,7 @@ function scrollToTarget(event) {
   phone.addEventListener('click', copyToClipboard)
   mail.addEventListener('click', copyToClipboard)
 
-  export function copyToClipboard(ev) {
+function copyToClipboard(ev) {
     navigator.clipboard.writeText(ev.currentTarget.innerText);
   
     copyText.classList.add('visible');
@@ -148,12 +148,4 @@ function scrollToTarget(event) {
       copyText.classList.remove('visible');
     }, 1500);
   }
-
-  module.exports = {
-    copyToClipboard,
-    newsClear,
-    newsLabelDown,
-    newsLabelUp
-  }
-
 
