@@ -9,6 +9,8 @@
 
 body {
   overflow-x: hidden;
+  z-index: -323123312;
+  position: relative;
 }
 
 :root {
@@ -19,7 +21,7 @@ body {
 }
 
 .centro {
-  max-width: 1280px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
@@ -56,7 +58,6 @@ header .centro nav {
   display: flex;
   column-gap: 50px;
   align-items: center;
-  margin-right: -25px;
 }
 
 header .centro nav a {
@@ -130,15 +131,7 @@ header .centro nav .userDiv .username {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
-
-.start img {
-  height: 800px;
-  width: 100%;
-  object-fit: cover;
-  filter: grayscale(1);
   position: relative;
-  z-index: -1;
 }
 
 .start .text .title {
@@ -183,6 +176,7 @@ header .centro nav .userDiv .username {
   border: none;
   cursor: pointer;
   transition: transform 0.4s ease-in-out;
+  position: relative;
 }
 
 .start .text .planos:hover,
@@ -695,7 +689,7 @@ header .centro nav .userDiv .username {
   flex-direction: column;
   align-items: center;
   background-color: #050505;
-  padding: 50px 40px;
+  padding: 40px 40px;
   border-radius: 30px 0px 30px 0;
   border-top: 8px solid #1a1a1a;
   border-left: 8px solid #1a1a1a;
@@ -726,7 +720,7 @@ header .centro nav .userDiv .username {
 }
 
 .form .formulario .imgContent {
-  height: 754px;
+  height: 744px;
   width: 60%;
   object-fit: cover;
 }
@@ -763,7 +757,7 @@ header .centro nav .userDiv .username {
 }
 
 .form .formulario .formContent .formBtn {
-  padding: 17px 17px;
+  padding: 12px 5px;
   color: #050505;
   text-align: center;
   font-family: Nunito Sans;
