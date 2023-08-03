@@ -80,10 +80,8 @@ function btnShowHide(count) {
   function copyToClipboard(ev) {
     navigator.clipboard.writeText(ev.currentTarget.innerText);
   
-    // Adiciona a classe "visible" para fazer o elemento aparecer
     copyText.classList.add('visible');
   
-    // Aguarda 2 segundos (2000 milissegundos) e, em seguida, remove a classe "visible" para fazer o elemento sumir
     setTimeout(function () {
       copyText.classList.remove('visible');
     }, 1500);
