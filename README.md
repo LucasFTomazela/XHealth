@@ -43,21 +43,39 @@
   <li>
     <strong>Diverse Modalities:</strong>  XHealth Gym offers a wide variety of modalities, catering to different preferences and fitness goals. From high-impact activities to gentle exercises, our gym provides options to suit everyone's needs.
   </li><br>
+  <div align="center">
+    <img src="img/readme/modalidades.png" alt="logo" width="800"/>
+  </div><br>
   <li>
     <strong>Student Testimonials:</strong>  The website showcases real testimonials from our students who achieved significant results during their time at the gym. These testimonials inspire and instill confidence in potential clients, motivating them to become part of our fitness community.
   </li><br>
+  <div align="center">
+    <img src="img/readme/feedbacks.png" alt="logo" width="800"/>
+  </div><br>
   <li>
     <strong>Experienced Professionals:</strong>  Our instructors are highly experienced professionals and athletes who are well-respected in the fitness industry. They possess the expertise and knowledge needed to guide and support students on their fitness journeys, ensuring they reach their goals safely and effectively.
   </li><br>
+  <div align="center">
+    <img src="img/readme/profissionais.png" alt="logo" width="800"/>
+  </div><br>
   <li>
     <strong>Additional Services:</strong>  In addition to the various modalities, we offer extra services such as body composition analysis with bioimpedance and personalized training plans, physiotherapy for injury treatment and prevention, and one-on-one sessions with personal trainers. These services can be availed individually to complement the students' gym experience.
   </li><br>
+  <div align="center">
+    <img src="img/readme/serv_add.png" alt="logo" width="800"/>
+  </div><br>
   <li>
     <strong>Easy Communication:</strong>  Prospective clients can easily get in touch with us through the website by sending messages to inquire about our services or seek more information.
   </li><br>
+  <div align="center">
+    <img src="img/readme/comunicacao.png" alt="logo" width="800"/>
+  </div><br>
   <li>
     <strong>Student Area:</strong>  We have a dedicated section for enrolled students where they can access their profile information and details about their personalized training plans.
   </li>
+  <div align="center">
+    <img src="img/readme/estudante.png" alt="logo" width="800"/>
+  </div><br>
 </ul>
 
 <h2>Colors and Visual Identity 🎨</h2>
