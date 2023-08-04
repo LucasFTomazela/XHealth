@@ -34,7 +34,7 @@
 
 <h2>Developers 👨‍💻👨‍💻</h2>
 <ul>
-<li><a href="#" target="_blank">Felipe Nascimento de Moura</a></li>
+<li><a href="https://www.linkedin.com/in/felipe-moura-384a95270/" target="_blank">Felipe Nascimento de Moura</a></li>
 <li><a href="https://www.linkedin.com/in/lucasftomazela/" target="_blank" rel="noopener noreferrer">Lucas Fernando Tomazela</a></li>
 </ul>
 
