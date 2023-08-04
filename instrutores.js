@@ -1,71 +1,56 @@
-const trackContainer = document.querySelector('.cards');
-const carouselImage = document.querySelectorAll('.card');
-const btnPrev = document.querySelector('.btn--prev');
-const btnNext = document.querySelector('.btn--next');
-let amountToMove = carouselImage[0].offsetWidth;
+let sliderContainer = document.querySelector('.galleria__inner');
+let innerSlider = document.querySelector('.galleria__item');
 
-window.addEventListener('resize', () => {
-  amountToMove = carouselImage[0].offsetWidth;
-});
+let pressed = false;
+let startX;
+let x;
 
-let count = 0;
-
-btnNext.addEventListener('click', nextBtn);
-
-function nextBtn(){
-  if (count >= carouselImage.length - 1) return;
-  count++;
-  let imgSrc = carouselImage[count - 1].firstElementChild;
-  if (imgSrc.getAttribute('src') === "") {
-    imgSrc.setAttribute('src', imgSrc.dataset.src);
-  }
-  trackContainer.style.transition = "transform 0.5s ease-in-out";
-  trackContainer.style.transform = 'translateX(-' + amountToMove * count + 'px)';
-  btnShowHide(count);
-}
-
-btnPrev.addEventListener('click', prevBtn);
-
-function prevBtn() {
-  if (count === 0) return;
-  count--;
-  trackContainer.style.transition = "transform 0.5s ease-in-out";
-  trackContainer.style.transform = 'translateX(-' + amountToMove * count + 'px)';
-  btnShowHide(count);
-}
-
-window.addEventListener('resize', () => {
-  const widthGallery = document.querySelector('.tour__gallery').offsetWidth;
-  trackContainer.style.transition = "none";
-  trackContainer.style.transform = 'translateX(-' + amountToMove * count + 'px)';
-  if (count === carouselImage.length - 1) {
-    trackContainer.style.transform = 'translateX(-' + amountToMove * count + 'px)';
+sliderContainer.addEventListener("mousedown", (e) => {
+  pressed = true;
+  startX = e.offsetX - innerSlider.offsetLeft;
+  sliderContainer.style.cursor = "grabbing";
+  if (!pressed) {
+    sliderContainer.classList.add("no-pointer-events");
   }
 });
 
-function btnShowHide(count) {
-  console.log(count);
-  if (count === 0) {
-    btnPrev.classList.add('is-hidden');
-    btnNext.classList.remove('is-hidden');
-    btnPrev.style.cursor = 'default';
-    btnNext.style.cursor = 'pointer';
-    btnNext.addEventListener('click', nextBtn)
-  } else if (count === carouselImage.length - 2) {
-    btnPrev.classList.remove('is-hidden');
-    btnNext.classList.add('is-hidden');
-    btnNext.removeEventListener('click', nextBtn)
-    btnNext.style.cursor = 'default';
-    btnPrev.style.cursor = 'pointer';
-  } else {
-    btnPrev.classList.remove('is-hidden');
-    btnNext.classList.remove('is-hidden');
-    btnNext.addEventListener('click', nextBtn)
-    btnPrev.addEventListener('click', prevBtn)
-    btnNext.style.cursor = 'pointer';
-    btnPrev.style.cursor = 'pointer';
+sliderContainer.addEventListener("mouseup", () => {
+  sliderContainer.style.cursor = "grab";
+  pressed = false;
+  sliderContainer.classList.remove("no-pointer-events");
+});
+
+sliderContainer.addEventListener("mousemove", (e) => {
+  if (pressed) {
+    e.preventDefault();
+    x = e.clientX; // Use clientX em vez de offsetX para obter a posição correta do mouse
+    innerSlider.style.left = `${x - startX}px`;
+    checkBoundary();
   }
-}
+});
+
+sliderContainer.addEventListener("mouseenter", () => {
+  sliderContainer.style.cursor = "grab";
+});
+
+sliderContainer.addEventListener("mouseleave", () => {
+  sliderContainer.style.cursor = "grab";
+  if (!pressed) {
+    sliderContainer.classList.remove("no-pointer-events");
+  }
+});
+
+const checkBoundary = () => {
+  const sliderWidth = parseInt(window.getComputedStyle(innerSlider).width);
+  const leftLimit = 0;
+  const rightLimit = -1700;
+
+  if (x - startX > leftLimit) {
+    innerSlider.style.left = `${leftLimit}px`;
+  } else if (x - startX < rightLimit) {
+    innerSlider.style.left = `${rightLimit}px`;
+  }
+};
 
 const address = document.getElementById(`address`)
   const phone = document.getElementById(`phone`)

@@ -20,7 +20,7 @@ body {
 }
 
 .centro {
-  max-width: 1398px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 
@@ -57,7 +57,6 @@ header .centro nav {
   display: flex;
   column-gap: 50px;
   align-items: center;
-  margin-right: -25px;
 }
 
 header .centro nav a {
@@ -110,17 +109,24 @@ header .centro nav .userDiv {
   cursor: default;
 }
 
-.main .centro .cards {
-  display: flex;
-  column-gap: 94px;
-  margin-top: 100px;
-  width: 100%;
-  position: absolute;
-  top: 100%;
-  left: 0;
+.galleria__inner {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
 }
 
-.main .centro .cards .card {
+.main .centro .galleria__item {
+  width: 150%;
+  display: flex;
+  column-gap: 10px;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 100px;
+}
+
+.main .centro .galleria__item .card {
   display: flex;
   flex-direction: column;
   justify-content: end;
@@ -131,106 +137,72 @@ header .centro nav .userDiv {
   min-width: 403px;
   max-width: 403px;
   height: 420px;
+  margin-right: -300px;
 }
 
-.main .centro .cards .card1 {
-  background-image: url(https://hips.hearstapps.com/hmg-prod/images/articles/2016/06/riptensity-belly-fat-knockout-1522243377.jpg?crop=0.636xw:1xh;center,top&resize=360:*);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card1:hover {
+.main .centro .galleria__item .card1 {
   background-image: url(https://hips.hearstapps.com/hmg-prod/images/articles/2016/06/ripped-1-min-abs-1467726482.jpg?crop=0.636xw:1xh;center,top&resize=360:*);
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card2 {
-  background-image: url(https://swoontalent.com/wp-content/uploads/2022/09/BETINA-IN-ACTION-1024x682.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  filter: grayscale(1);
   box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
 }
 
-.main .centro .cards .card2:hover {
+.main .centro .galleria__item .card2 {
   background-image: url(https://asweatlife.com/wp-content/uploads/2018/05/aSweatLife_BetinaGozo_SweatWorking_featured.jpg);
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card3 {
-  background-image: url(https://scontent.frao3-1.fna.fbcdn.net/v/t39.30808-6/259261331_4517977184924462_639567612984446920_n.jpg?stp=cp0_dst-jpg_e15_fr_q65&_nc_cat=103&ccb=1-7&_nc_sid=9e2e56&efg=eyJpIjoidCJ9&_nc_eui2=AeHJQji4-6poBh-6gUCVBgyE9yk9Buli0pL3KT0G6WLSkvOFlo88thFNkY5VCT8knAzbPpn2V-VH0uTMyCByYwT4&_nc_ohc=FkZE2_HccooAX-1Bh-Y&_nc_ht=scontent.frao3-1.fna&oh=00_AfBlctKBbZBR3dWOokOo9pjZ9KBUoY9DiVto1iMUM5R9mg&oe=64CE3614);
   background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card3:hover {
-  background-image: url(https://static.hudl.com/users/prod/7229434_0dfb81b432db460388318d29b97ed857.jpg);
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card4 {
-  background-image: url(https://i.insider.com/63b73b1b8a50b20018ef331c?width=700);
-  background-repeat: no-repeat;
-  background-position: top;
-  background-size: cover;
-  filter: grayscale(1);
-  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
-  transition: all 0.5s ease-in-out;
-}
-
-.main .centro .cards .card4:hover {
-  background-image: url(https://www.wellandgood.com/wp-content/uploads/2016/06/jillian-michaels-health-rules-7.jpg);
   background-position: center;
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card5 {
-  background-image: url(https://ta-prod-assets.s3.us-east-1.amazonaws.com/media/2019/10/30114932/TA_LaTimes-1-e1623734124425.jpg);
-  background-repeat: no-repeat;
-  background-position: top;
   background-size: cover;
-  filter: grayscale(1);
   box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
 }
 
-.main .centro .cards .card5:hover {
+.main .centro .galleria__item .card3 {
+  background-image: url(https://static.hudl.com/users/prod/7229434_0dfb81b432db460388318d29b97ed857.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
+}
+
+.main .centro .galleria__item .card4 {
+  background-image: url(https://www.wellandgood.com/wp-content/uploads/2016/06/jillian-michaels-health-rules-7.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  filter: grayscale(0);
+  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
+}
+
+.main .centro .galleria__item .card5 {
   background: url(https://i.dailymail.co.uk/1s/2023/02/17/16/67799397-11760491-Over_the_past_two_decades_Tracy_Anderson_s_name_has_become_synon-a-57_1676652555656.jpg);
-  background-size: cover;
-  filter: grayscale(0);
-}
-
-.main .centro .cards .card6 {
-  background-image: url(https://9bqea6.p3cdn2.secureserver.net/wp-content/uploads/2018/01/about-e1515538886349.jpg?time=1681847931);
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
-  filter: grayscale(1);
+  filter: grayscale(0);
   box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
   transition: all 0.5s ease-in-out;
 }
 
-.main .centro .cards .card6:hover {
+.main .centro .galleria__item .card6 {
   background-image: url(https://media.thechalkboardmag.com/wp-content/uploads/2019/02/29215220/gunnar-1.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
   filter: grayscale(0);
+  box-shadow: inset -4px -64px 52px 9px rgba(0, 0, 0, 0.75);
+  transition: all 0.5s ease-in-out;
 }
 
-.main .centro .cards .card .text {
+.main .centro .galleria__item .card .text {
   margin-left: 30px;
   margin-bottom: 30px;
 }
 
-.main .centro .cards .card .text .name {
+.main .centro .galleria__item .card .text .name {
   color: rgb(235, 186, 52) !important;
   font-family: Nunito Sans;
   font-size: 24px;
@@ -238,7 +210,7 @@ header .centro nav .userDiv {
   font-weight: 800;
 }
 
-.main .centro .cards .card .text .area {
+.main .centro .galleria__item .card .text .area {
   color: rgba(255, 255, 255, 0.8);
   font-family: Nunito Sans;
   font-size: 18px;
@@ -316,11 +288,6 @@ header .centro nav .userDiv {
 .is-hidden {
   opacity: 0;
   cursor: none;
-}
-
-.wrap {
-  width: 100%;
-  height: 700px;
 }
 
 footer {
@@ -620,4 +587,22 @@ footer .centro .right .newsletter .email .newsletterInput button:not(:hover) {
 
 .newsletter input:focus {
   outline: 1px solid #ebba34 !important;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b4902c;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ebba34;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
 }

@@ -20,7 +20,7 @@ body {
 }
 
 .centro {
-  max-width: 1398px;
+  max-width: 1220px;
   margin: 0 auto;
   position: relative;
 }
@@ -58,7 +58,6 @@ header .centro nav {
   display: flex;
   column-gap: 50px;
   align-items: center;
-  margin-right: -25px;
 }
 
 header .centro nav a {
@@ -493,4 +492,22 @@ footer .centro .right .newsletter .email .newsletterInput button:not(:hover) {
 
 .newsletter input:focus {
   outline: 1px solid #ebba34 !important;
+}
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b4902c;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ebba34;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
 }
