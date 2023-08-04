@@ -72,7 +72,7 @@
   </div><br>
   <li>
     <strong>Student Area:</strong>  We have a dedicated section for enrolled students where they can access their profile information and details about their personalized training plans.
-  </li>
+  </li><br>
   <div align="center">
     <img src="img/readme/estudante.png" alt="logo" width="800"/>
   </div><br>
