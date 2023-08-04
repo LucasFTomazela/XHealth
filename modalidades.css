@@ -632,3 +632,21 @@ footer .centro .right .newsletter .email .newsletterInput button:not(:hover) {
   height: 100%;
   backdrop-filter: blur(4px); /* Aplica o blur apenas à .card-breve */
 }
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b4902c;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ebba34;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}

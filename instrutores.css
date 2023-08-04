@@ -588,3 +588,21 @@ footer .centro .right .newsletter .email .newsletterInput button:not(:hover) {
 .newsletter input:focus {
   outline: 1px solid #ebba34 !important;
 }
+
+body::-webkit-scrollbar {
+  width: 15px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #b4902c;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #ebba34;
+  border-radius: 8px;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: #1a1a1a;
+}
